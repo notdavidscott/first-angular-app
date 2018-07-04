@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic');
+
+#header {   
+    text-align: center;   
+    margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+#profile_pic-header {
+    width: 300px;
+    border: 1px solid black;  
+    border-radius: 1%; 
+    box-shadow: 2px 5px 2px rgb(166, 166, 166); 
+    margin: 40px;
+}
+
+#tag-line {
+    background-color: rgb(52, 66, 82);
+    font-size: 25px;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+
+#about-me-container {
+    width: 100%;
+    text-align: center;
+
+}
+.about-me {
+    margin: 20px;
+    max-width: 800px;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.photo-gallery {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEF0F1;
+    padding-bottom: 40px;
+    overflow: auto;
+    text-align: center;
+}
+
+.photos img {
+    height: 306px; 
+    width: auto; 
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    overflow: auto;
+    transition: all 0.35s ease-in-out;
+}
+
+.photos img:hover { 
+ height: 380px;
+-webkit-transition: height .8s; 
+    transition: height .8s;
+-webkit-transition-delay: .1s; /* Safari */
+    transition-delay: .1s;
+
+}
+     
