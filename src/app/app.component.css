@@ -44,6 +44,7 @@
     padding-bottom: 40px;
     overflow: auto;
     text-align: center;
+
 }
 
 .photos img {
@@ -64,4 +65,3 @@
     transition-delay: .1s;
 
 }
-     
