@@ -63,5 +63,14 @@
     transition: height .8s;
 -webkit-transition-delay: .1s; /* Safari */
     transition-delay: .1s;
-
 }
+
+.skills-section {
+    margin: 20px;
+    padding: 10px;
+}
+
+app-skills {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }

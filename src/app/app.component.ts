@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { url } from 'inspector';
+//import { url } from 'inspector';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { url } from 'inspector';
 })
 export class AppComponent {
   name = 'David Scott Perez';
-  title = 'Fullstack Javascript Dev'
+  title = 'Fullstack Javascript Dev';
   city = "Ladera Ranch";
   tagLine = '"Do it" - Emporer Palpatine';
   tagLine2 = '"Doin\'\ it!" - Josh Peck';
