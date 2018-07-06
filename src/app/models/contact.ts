@@ -1,3 +1,4 @@
+import { Url, UrlObject } from "url";
 
 
 export class Contact {
@@ -5,4 +6,5 @@ export class Contact {
     lastName: string;
     phoneNumber: string;
     email: string;
+    image?: UrlObject;
 }

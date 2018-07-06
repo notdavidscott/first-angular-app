@@ -1,3 +1,15 @@
-<p>
-  contacts works!
-</p>
+
+<div>
+    <h3>Contacts: </h3><br>
+    <div class="row justify-content-center">
+      
+      <div *ngFor="let contact of contacts" class="contact-container">
+        <li>
+            <p>{{contact.firstName}} {{contact.lastName}}<br>
+              {{contact.phoneNumber}}<br>
+              {{contact.email}}</p>{{contact.image}}
+        </li>
+    </div>
+  </div>
+</div>
+  

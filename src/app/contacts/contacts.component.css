@@ -1,0 +1,14 @@
+li {
+    list-style-type: none;
+}
+h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-container {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25), 0 7px 10px rgba(0,0,0,0.22);
+    font-family: 'Montserrat', sans-serif;
+}
