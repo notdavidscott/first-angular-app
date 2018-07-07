@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+//import { ContactForm } from '../models/contact-form';
+//import { ContactFormsService } from '../services/contact-forms.service';
+import { Message } from '../models/message';
 
 @Component({
   selector: 'app-contact-form',
@@ -6,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
+  model: Message = new Message();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    //this.contactforms = this.dataService.contactforms;
+  }
+  onSubmit(){
+    console.log('Form Submission Successful: ', this.model);
   }
 
 }

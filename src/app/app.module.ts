@@ -13,6 +13,7 @@ import { GreetingComponent } from './greeting/greeting.component';
 import { GreetingsService } from './services/greetings.service';
 
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactFormsService } from './services/contact-forms.service';
 
 
 
@@ -28,7 +29,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     BrowserModule, 
     FormsModule
   ],
-  providers: [SkillsService, ContactsService, GreetingsService],
+  providers: [SkillsService, ContactsService, GreetingsService, ContactFormsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

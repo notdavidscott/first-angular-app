@@ -16,8 +16,9 @@ export class ContactsComponent implements OnInit {
     this.dataService = this.contactsService;
   }
 
-  ngOnInit() {
-    this.contacts = this.dataService.contacts;
+  ngOnInit(): void {
+   // this.contacts = this.dataService.contacts;
+   this.dataService.getContacts().subscribe(contacts => this.contacts = contacts);
   }
 
 }

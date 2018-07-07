@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { Observable, of } from 'rxjs';
 import { Contact } from '../models/contact';
 
 
@@ -22,9 +22,9 @@ export class ContactsService {
     },
     {
       firstName: 'Pam',
-      lastName: 'Biesley',
+      lastName: 'Beasley',
       phoneNumber: '(756)587-4345',
-      email: 'pbiesley@dundermifflin.com'
+      email: 'pbeasley@dundermifflin.com'
     },
     {
       firstName: 'Dwight',
@@ -32,6 +32,9 @@ export class ContactsService {
       phoneNumber: '(756)594-2494',
       email: "schrutefarms@scrantonbiz.org"
     }
-  ]
-  constructor() { }
+  ];
+
+    getContacts = (): Observable<Contact[]> => {
+     return of(this.contacts);  
+    };
 }

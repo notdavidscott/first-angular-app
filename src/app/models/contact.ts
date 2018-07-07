@@ -1,6 +1,5 @@
 import { Url, UrlObject } from "url";
 
-
 export class Contact {
     firstName: string;
     lastName: string;
