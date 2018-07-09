@@ -15,6 +15,8 @@ import { GreetingsService } from './services/greetings.service';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactFormsService } from './services/contact-forms.service';
 
+import { PhonebookComponent } from './phonebook/phonebook.component';
+import { PhonebooksService } from './services/phonebooks.service';
 
 
 @NgModule({
@@ -23,13 +25,14 @@ import { ContactFormsService } from './services/contact-forms.service';
     SkillsComponent,
     ContactsComponent,
     GreetingComponent,
-    ContactFormComponent, 
+    ContactFormComponent,
+    PhonebookComponent, 
   ],
   imports: [
     BrowserModule, 
     FormsModule
   ],
-  providers: [SkillsService, ContactsService, GreetingsService, ContactFormsService],
+  providers: [SkillsService, ContactsService, GreetingsService, ContactFormsService, PhonebooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
