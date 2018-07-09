@@ -1,0 +1,27 @@
+<div>
+  <h2>Phone Book</h2><br>
+
+<form (ngSubmit)="onSubmit()"> 
+  <div>
+      <label for="firstName">First Name: </label> 
+      <input type="text" class="form-control" name="firstName" placeholder="First" required [(ngModel)]="model.firstName" />
+      
+  </div>
+  <div>
+      <label for="lastName">Last Name: </label> 
+      <input type="text" class="form-control" name="lastName" placeholder="Last" required [(ngModel)]="model.lastName" />
+  </div>
+  <div>
+      <label for="phoneNumber">Phone Number: </label> 
+      <input type="number" class="form-control" name="phoneNumber" placeholder="Phone" required [(ngModel)]="model.phoneNumber" />
+    </div>
+    <div>
+        <label for="email">Email: </label> 
+        <input type="text" class="form-control" name="email" placeholder="Email Address" required [(ngModel)]="model.email" />
+      </div>
+    <br>
+  <div>
+      <button type="submit" class="btn btn-outline-primary">Add Contact</button>
+  </div>
+</form>
+</div>
