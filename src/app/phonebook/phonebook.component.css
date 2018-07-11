@@ -1,6 +1,7 @@
 form input {
     outline-width: 0;
-    border-style: none;
+    border: 2px solid white;
+
 }
 
 form textarea {
