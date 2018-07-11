@@ -1,65 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div id="header">
+  <nav class="navbar"> 
+    <div class="justify-content-start">
+    <a class="btn" routerLink="greeting" routerLinkActive="active">Home</a>
+    <a class="btn" routerLink="skills" routerLinkActive="active">Skills</a>
+    <a class="btn" routerLink="contact" routerLinkActive="contact">Contact</a>
+  </div>
+  </nav>
+  <br>
+
     <h2 id="title-header">
       {{ name }}, {{ title }} 
     </h2>
-    <img id="profile_pic-header" alt="profile_pic" src="https://notdavidscott.com/images/profile_pic.JPEG">
-    <app-greeting></app-greeting>
+
+    
    
 </div>
-
-
-
-<div id="tag-line">
-  <h4> {{ tagLine }}</h4>
-  <h4> {{ tagLine2 }}</h4>
-</div>
-
-  <div class="skills-section">
-      <app-skills></app-skills>
-  </div>
-
-<div class="row justify-content-center" id="about-me-container">
-  <div class="col about-me">
-    <h3> About Me </h3>
-    <hr />
-    <p> {{ aboutMe }} </p>
-  </div>
-  <div class="col">
-    <img src="http://www.amysims.com/wp-content/uploads/2016/04/328.jpg" style="height:400px;"/>
-  </div>
-</div>
-
-<div class="contacts-section">
-  <app-contacts></app-contacts>
-</div>
-
-<div class="contact-me row justify-content-center">
-
-  <app-contact-form></app-contact-form>
+<div class="row justify-content-center">
+<router-outlet></router-outlet>
 </div>
 
 
-<div class="photo-gallery"><br>
-    <p> Since a picture says a thousands words, here are 6000 words for you!</p>
-  <div class="photos">
-      
-          <div class="p-2 d-flex row"><img src="http://notdavidscott.com/images/Lizard.sm.jpg" />
-          <img src="http://notdavidscott.com/images/Resort.sm.jpg" />
-         <img src="http://notdavidscott.com/images/coffee2.0.jpg" />
-        </div>
-              
-         <div class="d-flex row justify-content-end">
-            <div class="p-2"><img src="http://notdavidscott.com/gallery/images/hiddenhouseramp.jpg" />
-             <img src="http://notdavidscott.com/gallery/images/puerto.sm.jpg" />
-            <img src="http://notdavidscott.com/gallery/images/bethelmusiclive.jpg" />
-          </div>         
-  </div>
-</div>
- 
-<div class="contact-me row justify-content-center">
- <div class = "phonebook"> 
-    <app-phonebook></app-phonebook>
-  </div>
-</div>
+
+

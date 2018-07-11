@@ -19,6 +19,8 @@ import { PhonebooksService } from './services/phonebooks.service';
 
 import { ContactsModule } from './modules/contacts/contacts.module';
 import { SkillsModule } from './modules/skills/skills.module';
+import { AppRoutingModule } from './/app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { SkillsModule } from './modules/skills/skills.module';
     FormsModule,
     SkillsModule,
     ContactsModule,
+    AppRoutingModule,
+   
   ],
   providers: [SkillsService, ContactsService, GreetingsService, ContactFormsService, PhonebooksService],
   bootstrap: [AppComponent]

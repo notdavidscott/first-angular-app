@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic');
 
 #header {   
-    text-align: center;   
-    margin-top: 30px;
+    text-align: center;  
 	font-family: 'Montserrat', sans-serif;
 
 }
@@ -39,9 +38,10 @@
 
 }
 
+
 .photo-gallery {
     font-family: 'Montserrat', sans-serif;
-    background-color: #EEF0F1;
+    background-color: rgb(226, 228, 229);
     padding-bottom: 40px;
     overflow: auto;
     text-align: center;
@@ -86,11 +86,19 @@ app-skills {
     margin: 60px 0 60px 0;
     padding: 20px;
  
-
 }
 
 .phonebook {
     font-family: 'Montserrat', sans-serif;
     margin: 60px 0 60px 0;
     padding: 20px;
+}
+.navbar {
+    background-color: gainsboro;
+}
+.navbar a {
+    color: black;
+}
+.navbar btn {
+    outline: none;
 }
