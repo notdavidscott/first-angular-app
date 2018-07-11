@@ -2,3 +2,8 @@ li {
     padding: 0;
     list-style-type: none;
 }
+.skills-section {
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+margin: 10px;
+}

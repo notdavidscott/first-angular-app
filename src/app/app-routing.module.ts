@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { SkillsComponent } from './modules/skills/components/skills/skills.component';
 import { GreetingComponent } from './components/greeting/greeting.component';
+import { DisplayMoviesComponent } from './modules/movies/display-movies/display-movies.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       path: '', 
       redirectTo: '/greeting',
       pathMatch: 'full'
+  }, 
+  {
+      path: 'movies',
+      component: DisplayMoviesComponent
   }
 ]
 
