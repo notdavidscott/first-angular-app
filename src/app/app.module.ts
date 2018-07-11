@@ -3,34 +3,35 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SkillsComponent } from './skills/skills.component';
-import { SkillsService } from './services/skills.service';
+//import { SkillsModule } from 
+import { SkillsService } from './modules/skills/services/skills.service';
 
-import { ContactsComponent } from './contacts/contacts.component';
-import { ContactsService } from './services/contacts.service';
+import { ContactsService } from './modules/contacts/services/contacts.service';
 
-import { GreetingComponent } from './greeting/greeting.component';
+import { GreetingComponent } from './components/greeting/greeting.component';
 import { GreetingsService } from './services/greetings.service';
 
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ContactFormsService } from './services/contact-forms.service';
 
-import { PhonebookComponent } from './phonebook/phonebook.component';
+import { PhonebookComponent } from './components/phonebook/phonebook.component';
 import { PhonebooksService } from './services/phonebooks.service';
 
+import { ContactsModule } from './modules/contacts/contacts.module';
+import { SkillsModule } from './modules/skills/skills.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillsComponent,
-    ContactsComponent,
     GreetingComponent,
     ContactFormComponent,
     PhonebookComponent, 
   ],
   imports: [
     BrowserModule, 
-    FormsModule
+    FormsModule,
+    SkillsModule,
+    ContactsModule,
   ],
   providers: [SkillsService, ContactsService, GreetingsService, ContactFormsService, PhonebooksService],
   bootstrap: [AppComponent]

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../models/skill';
-import { Level } from '../types/level.enum';
+import { Skill } from '../../../../shared/models/skill';
+import { Level } from '../../../../shared/types/level.enum';
 
-import { SkillsService } from '../services/skills.service';
+import { SkillsService } from '../../services/skills.service';
 
 @Component({
   selector: 'app-skills',

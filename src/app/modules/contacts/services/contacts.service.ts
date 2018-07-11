@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Contact } from '../models/contact';
+import { Contact } from '../../../shared/models/contact';
 
 
 @Injectable({

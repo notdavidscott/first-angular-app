@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Phonebook } from '../models/phonebook';
-import { PhonebooksService } from '../services/phonebooks.service';
+import { Phonebook } from '../../shared/models/phonebook';
+import { PhonebooksService } from '../../services/phonebooks.service';
 
 
 @Component({

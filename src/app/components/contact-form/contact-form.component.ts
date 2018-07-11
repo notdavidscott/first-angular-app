@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 //import { ContactForm } from '../models/contact-form';
 //import { ContactFormsService } from '../services/contact-forms.service';
-import { Message } from '../models/message';
+import { Message } from '../../shared/models/message';
 
 @Component({
   selector: 'app-contact-form',

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Phonebook } from '../models/phonebook';
+import { Phonebook } from '../shared/models/phonebook';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
