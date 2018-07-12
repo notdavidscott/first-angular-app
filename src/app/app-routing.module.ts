@@ -5,6 +5,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { SkillsComponent } from './modules/skills/components/skills/skills.component';
 import { GreetingComponent } from './components/greeting/greeting.component';
 import { DisplayMoviesComponent } from './modules/movies/display-movies/display-movies.component';
+import { DisplayMusicComponent } from './modules/movies/display-music/display-music.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
       path: 'movies',
       component: DisplayMoviesComponent
+  }, 
+  {
+      path: 'music', 
+      component: DisplayMusicComponent
   }
 ]
 

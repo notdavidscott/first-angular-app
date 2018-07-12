@@ -23,6 +23,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { RouterModule } from '@angular/router';
 
 import { MoviesModule } from './modules/movies/movies.module';
+import { MusicModule } from './modules/music/music.module';
 
 
 
@@ -39,6 +40,7 @@ import { MoviesModule } from './modules/movies/movies.module';
     SkillsModule,
     ContactsModule,
     MoviesModule,
+    MusicModule,
     AppRoutingModule,
    
   ],

@@ -18,7 +18,7 @@ export class DisplayMoviesComponent implements OnInit {
   getMovies() {
     this.http.get<Movie[]>(this.moviesRoute).subscribe(movies => {
         this.movies = movies;
-        console.log('Movies', this.movies);
+       // console.log('Movies', this.movies);
     });
   }
 

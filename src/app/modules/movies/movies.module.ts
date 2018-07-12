@@ -5,11 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { DisplayMoviesComponent } from './display-movies/display-movies.component';
 
 
+
 @NgModule({
   imports: [
     CommonModule, HttpClientModule
   ],
-  declarations: [DisplayMoviesComponent],
+  declarations: [DisplayMoviesComponent,],
   exports: [
     DisplayMoviesComponent
   ]

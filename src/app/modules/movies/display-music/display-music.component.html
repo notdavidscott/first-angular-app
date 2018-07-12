@@ -1,0 +1,19 @@
+<div class="music">
+    <h2>
+     Music:
+    </h2>
+    
+        <div class="content-box">
+          <div class="row justify-content-center">
+    <div *ngFor="let music of music" class="music-container">
+        
+      <li>
+        <p>{{music.id + 1}}. {{music.title}}
+          <br>by: {{music.artist}} <br><br>
+          <a [href]="music.url">Song Link</a></p>
+       
+      </li>
+      </div>
+    </div>
+
+  </div>
