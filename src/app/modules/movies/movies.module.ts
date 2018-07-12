@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 import { DisplayMoviesComponent } from './display-movies/display-movies.component';
+import { DisplayMovieComponent } from './components/display-movie/display-movie.component';
 
 
 
@@ -10,7 +11,7 @@ import { DisplayMoviesComponent } from './display-movies/display-movies.componen
   imports: [
     CommonModule, HttpClientModule
   ],
-  declarations: [DisplayMoviesComponent,],
+  declarations: [DisplayMoviesComponent, DisplayMovieComponent,],
   exports: [
     DisplayMoviesComponent
   ]

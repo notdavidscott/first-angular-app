@@ -1,4 +1,4 @@
-<div class="movies">
+<!-- <div class="movies">
     <h2>
       Movies:
     </h2>
@@ -10,4 +10,22 @@
       </li>
     </div>
 
-  </div>
+  </div> --> 
+
+  
+  <!-- THIS IS USING PARENT - CHILD COMPONENT PASSING DATA -->
+
+  
+  <div class="movies">
+      <h2>
+        Movies:
+      </h2>
+      <div class="row justify-content-center">
+      <app-display-movie *ngFor="let movie of movies" class="movie-container" style="text-align: left;"
+          [movie]="movie"
+          (movieDeleted)="onMovieDeleted($event)" 
+          (movieViewed)="onMovieViewed($event)">
+         <!-- for child to parent, parenthesis are used to indicate the output. -->
+      </app-display-movie>
+      </div>
+    </div>

@@ -1,0 +1,13 @@
+<div>
+    <p>
+      {{movie.id + 1}}. {{movie.title}}: {{movie.director}}
+    </p>
+    <img [src]='movie.image_url' style="max-height:320px;overflow:hidden;" />
+    <br>
+    <br>
+    <div class="row justify-content-center">
+    <button class="btn btn-outline-secondary" (click)="onClickView()">View</button>
+    <button class="btn btn-outline-danger" (click)="onClickDelete()">Delete</button>
+    
+  </div>
+  </div> 

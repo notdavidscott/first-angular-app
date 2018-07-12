@@ -11,7 +11,7 @@ import { Movie } from '../../../shared/models/movie';
 })
 export class DisplayMoviesComponent implements OnInit {
   private moviesRoute = 'http://localhost:3000/movies';
-  public movies: Movie[];
+  public movies: Movie[]; //array since mult movie selection
 
   constructor(private http: HttpClient) {}
 
@@ -25,5 +25,26 @@ export class DisplayMoviesComponent implements OnInit {
   ngOnInit() {
     this.getMovies();
   }
+  
+  onMovieDeleted(movieId) {
+    let movieIndex = 0;
+    for(let movie of this.movies) {
+      if(movie.id === movieId ) {
+        this.movies.splice(movieIndex, 1);
+        break;
+      }
+      movieIndex++;
+    }
+  }
 
+  onMovieViewed(movieId) {
+    for(let movie of this.movies) {
+      if(movie.id === movieId){
+        window.open(movie.image_url);
+        break;
+      }
+      
+    }
+   
+  }
 }
