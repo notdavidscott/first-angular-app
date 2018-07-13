@@ -9,6 +9,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class SkillsService {
+  skill: Skill;
   skills: Skill[] = [
     {
     id: 0,
@@ -34,5 +35,10 @@ export class SkillsService {
 
   getSkills = (): Observable<Skill[]> => {
     return of(this.skills);
+  }
+  getSkill = (id: number): Observable<Skill> => {
+    this.skill = this.skills.find(skill => skill.id === id);
+    //console.log('Id: ' + id + ', Result is: ', this.skills);
+    return of(this.skills.find(skill => skill.id === id));
   }
 }

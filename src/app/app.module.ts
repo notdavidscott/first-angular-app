@@ -20,7 +20,7 @@ import { PhonebooksService } from './services/phonebooks.service';
 import { ContactsModule } from './modules/contacts/contacts.module';
 import { SkillsModule } from './modules/skills/skills.module';
 import { AppRoutingModule } from './/app-routing.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 import { MoviesModule } from './modules/movies/movies.module';
 import { MusicModule } from './modules/music/music.module';
